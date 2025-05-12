@@ -7,26 +7,26 @@
             bool found;
             string[] fruits = { "banana", "apple", "orange", "pear", "grape", "pineapple" };
             Console.WriteLine("What would you like to find");
-            string target = Console.Readline();
+            string target = Char.ToString(Console.Readline());
 
             for (int i =0; i < fruits.Length; i++)
             {
-                if (ints[i] == target)
+                if (fruits[i] == target)
                 {
                     Console.WriteLine($"Your target has been found at index {i}");
-                    found = true
+                    found = true;
+                }
+               if (found == true)
+                {
+                Console.WriteLine("true");
+                }
+                else if (found == false)
+                {
+                Console.WriteLine("False");
                 }
             }
             
-            if (found = true)
-            {
-                Console.WriteLine("true");
-            }
-            else if (found = false)
-            {
-                Console.WriteLine("False");
-            }
-
+          
             // Your program should:
             // Ask the user what word they would like to find
             // Output the message True if the word is found
