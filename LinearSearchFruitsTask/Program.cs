@@ -4,27 +4,29 @@
     {
         static void Main(string[] args)
         {
-            bool found;
-            string[] fruits = { "banana", "apple", "orange", "pear", "grape", "pineapple" };
-            Console.WriteLine("What would you like to find");
-            string target = Char.ToString(Console.Readline());
+                bool found;
+    string[] fruits = { "banana", "apple", "orange", "pear", "grape", "pineapple" };
+    Console.WriteLine("What would you like to find");
+    string target = Console.ReadLine();
 
-            for (int i =0; i < fruits.Length; i++)
-            {
-                if (fruits[i] == target)
-                {
-                    Console.WriteLine($"Your target has been found at index {i}");
-                    found = true;
-                }
-               if (found == true)
-                {
-                Console.WriteLine("true");
-                }
-                else if (found == false)
-                {
-                Console.WriteLine("False");
-                }
-            }
+for (int i = 0; i < fruits.Length; i++)
+{
+    if (fruits[i] == target)
+    {
+        Console.WriteLine($"Your target has been found at index {i}");
+        found = true;
+        if (found == true)
+        {
+            Console.WriteLine("true");
+        }
+        else if (found == false)
+        {
+            Console.WriteLine("False");
+        }
+    }
+}
+
+
             
           
             // Your program should:
